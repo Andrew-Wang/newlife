@@ -18,7 +18,7 @@
       <!-- Footer Box #2 -->
       <div class="footerbox">
       <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('bottom2')) { ?>
-        <h4><?php echo __('Links','exobiz');?></h4>
+        <h4><?php echo __('友情链接','exobiz');?></h4>
         <ul>
           <?php wp_list_bookmarks('title_li=&categorize=0'); ?>
         </ul>
@@ -28,7 +28,7 @@
       <!-- Footer Box #3 -->
       <div class="footerbox">
       <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('bottom3')) { ?>
-        <h4><?php echo __('Our Address','ecobiz');?></h4>
+        <h4><?php echo __('公司地址','ecobiz');?></h4>
         <ul class="addresslist">
         <?php
           $info_address = get_option('ecobiz_info_address');
@@ -54,7 +54,7 @@
         <?php $footerlogo = get_option('ecobiz_footerlogo'); ?>
         <a href="<?php echo home_url();?>"><img src="<?php echo ($footerlogo) ? $footerlogo : get_template_directory_uri().'/images/logo.png';?>" alt="Footer Logo" class="aligncenter"/></a>      
         <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('bottom4')) { ?>
-          <p>Integer eu lacus mauris hendrerit egestas imperdiet placerat ullam dolor lectus sollicitudin sed dictum  uisque nibh ligula</p>
+          <p>青岛创源网站设计——青岛专业的网站设计、网站建设、网络推广</p>
         <?php } ?>
         <ul class="social-links">
         <?php
