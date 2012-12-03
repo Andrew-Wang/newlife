@@ -63,24 +63,24 @@ jQuery(document).ready(function($) {
             <?php endif;?>
             
             <?php $success_msg  = get_option('ecobiz_success_msg');?>
-            <div class="success-message"><?php echo ($success_msg) ? stripslashes($success_msg) : __("Your message has been sent successfully. Thank you!",'ecobiz');?></div>
+            <div class="success-message"><?php echo ($success_msg) ? stripslashes($success_msg) : __("我们已经收到您的留言，我们会尽快与您联系，谢谢!",'ecobiz');?></div>
             
             <div id="maincontactform">
               <form action="#" id="contactform"> 
               <div>
-                <label for="contactname"><?php echo __('Name ','ecobiz');?></label>
+                <label for="contactname"><?php echo __('姓名 ','ecobiz');?></label>
                 <input type="text" name="contactname" class="textfield" id="contactname" value=""  /><span class="require"> *</span>
-                <label for="contactsubject"><?php echo __('Subject ','ecobiz');?></label>
+                <label for="contactsubject"><?php echo __('主题 ','ecobiz');?></label>
                 <input type="text" name="contactsubject" class="textfield" id="contactsubject" value=""/><span class="require"> *</span>
-                <label for="contactemail"><?php echo __('E-mail ','ecobiz');?></label> 
+                <label for="contactemail"><?php echo __('邮箱地址 ','ecobiz');?></label> 
                 <input type="text" name="contactemail" class="textfield" id="contactemail" value="" /><span class="require"> *</span>
-                <label for="contactmessage"><?php echo __('Message ','ecobiz');?></label> 
+                <label for="contactmessage"><?php echo __('信息内容 ','ecobiz');?></label> 
                 <textarea name="contactmessage" id="contactmessage" class="textarea" cols="8" rows="12"></textarea><span class="require"> *</span>
                 <div class="clear"></div>
                 <input type="hidden" name="siteurl" id="siteurl" value="<?php get_template_directory_uri();?>" />   
                 <input type="hidden" name="sendto" id="sendto" value="<?php echo (get_option('ecobiz_info_email')) ? get_option('ecobiz_info_email') : get_option('admin_email');?>" />           
-                <a href="#" class="button" id="buttonsend"><span><?php echo __('SEND','ecobiz');?></span></a>
-                <span class="loading" style="display: none;"><?php echo __('Please wait..','ecobiz');?></span>
+                <a href="#" class="button" id="buttonsend"><span><?php echo __('发送','ecobiz');?></span></a>
+                <span class="loading" style="display: none;"><?php echo __('请等待..','ecobiz');?></span>
               </div>
               </form>
             </div>
@@ -98,9 +98,9 @@ jQuery(document).ready(function($) {
               Jln. Damai menuju Syurga No. 14,<br />
             Jakarta 20035,<br />
             Indonesia";?></li>
-              <li><strong><?php echo __('Phone','ecobiz');?></strong> : <?php echo $info_phone ? $info_phone : "+62 525625";?></li>
-              <li><strong><?php echo __('Email','ecobiz');?></strong> : <a href="mailto:<?php echo $info_email ? $info_email : "#";?>"><?php echo $info_email ? $info_email : "info@mydomain.com";?></a><br />
-              <strong><?php echo __('Website','ecobiz');?></strong> : <a href="<?php echo $info_website ? $info_website : "#";?>"><?php echo $info_website ? $info_website : "http://www.mydomain.com";?></a></li>
+              <li><strong><?php echo __('联系电话','ecobiz');?></strong> : <?php echo $info_phone ? $info_phone : "+62 525625";?></li>
+              <li><strong><?php echo __('邮箱','ecobiz');?></strong> : <a href="mailto:<?php echo $info_email ? $info_email : "#";?>"><?php echo $info_email ? $info_email : "info@mydomain.com";?></a><br />
+              <strong><?php echo __('网址','ecobiz');?></strong> : <a href="<?php echo $info_website ? $info_website : "#";?>"><?php echo $info_website ? $info_website : "http://www.mydomain.com";?></a></li>
             </ul>      
             <div class="clear"></div>
           </div>
