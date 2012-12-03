@@ -99,8 +99,8 @@ jQuery(document).ready(function($) {
             Jakarta 20035,<br />
             Indonesia";?></li>
               <li><strong><?php echo __('联系电话','ecobiz');?></strong> : <?php echo $info_phone ? $info_phone : "+62 525625";?></li>
-              <li><strong><?php echo __('邮箱','ecobiz');?></strong> : <a href="mailto:<?php echo $info_email ? $info_email : "#";?>"><?php echo $info_email ? $info_email : "info@mydomain.com";?></a><br />
-              <strong><?php echo __('网址','ecobiz');?></strong> : <a href="<?php echo $info_website ? $info_website : "#";?>"><?php echo $info_website ? $info_website : "http://www.mydomain.com";?></a></li>
+              <li><strong><?php echo __('邮箱','ecobiz');?></strong> : <a href="mailto:<?php echo $info_email ? $info_email : "#";?>"><?php echo $info_email ? $info_email : "info@mydomain.com";?></a></li>
+              <li><strong><?php echo __('网址','ecobiz');?></strong> : <a href="<?php echo $info_website ? $info_website : "#";?>"><?php echo $info_website ? $info_website : "http://www.mydomain.com";?></a></li>
             </ul>      
             <div class="clear"></div>
           </div>
