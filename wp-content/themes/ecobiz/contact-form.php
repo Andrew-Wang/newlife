@@ -13,17 +13,22 @@ Template Name: Contact Form
   $info_latitude = get_option('ecobiz_info_latitude') ? get_option('ecobiz_info_latitude') : "-6.229555086277892";
   $info_longitude = get_option('ecobiz_info_longitude') ? get_option('ecobiz_info_longitude') : "106.82551860809326";
 ?>
-                        
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACcaZADO4lQXTvVt1QRRWatwHx-RajbRw&sensor=false"></script>                        
 <script type="text/javascript">
-jQuery(document).ready(function($) {    
-	$("#map").gMap({ 
-  	 markers: [{ latitude: <?php echo $info_latitude ? $info_latitude : "-6.229555086277892";?>,
-     longitude: <?php echo $info_longitude ? $info_longitude : "106.82551860809326";?>,
-     html:"<?php echo $info_address ? $info_address : "Jakarta,Indonesia";?>",
-     popup: true
-   }],
-    zoom: 15
-	});
+jQuery(document).ready(function($) { 
+	var position = new google.maps.LatLng(<?php echo $info_latitude ? $info_latitude : "-6.229555086277892";?>, <?php echo $info_longitude ? $info_longitude : "106.82551860809326";?>);
+	var mapOptions = {
+          center: position,
+          zoom: 15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map"),
+            mapOptions);
+		var marker = new google.maps.Marker({
+			map:map,
+			animation: google.maps.Animation.DROP,
+			position: position
+		});
 });
 </script> 
   
