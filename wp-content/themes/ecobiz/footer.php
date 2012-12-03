@@ -10,7 +10,7 @@
         <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('bottom1')) { ?>
         <h4><?php echo __('Categories','ecobiz');?></h4>
         <ul>
-          <?php wp_list_categories('title_li=&hide_empty=0');?> 
+          <?php wp_list_categories('title_li=&hide_empty=0&exclude=1');?> 
         </ul>
         <?php } ?>
       </div>
@@ -42,9 +42,9 @@
             Jakarta 20035,<br />
             Indonesia";?>
           </li>
-          <li><strong><?php echo __('Phone ','ecobiz');?></strong>: <?php echo $info_phone ? $info_phone : "+62 525625";?></li>
-          <li><strong><?php echo __('Email ','ecobiz');?></strong>: <a href="mailto:<?php echo $info_email;?>"><?php echo $info_email ? $info_email : "info@mydomain.com";?></a></li>
-          <li><strong><?php echo __('Website ','ecobiz');?></strong>: <a href="<?php echo $info_website;?>"><?php echo $info_website ? $info_website : "http://www.mydomain.com";?></a></li>
+          <li><strong><?php echo __('电话 ','ecobiz');?></strong>: <?php echo $info_phone ? $info_phone : "+62 525625";?></li>
+          <li><strong><?php echo __('邮箱 ','ecobiz');?></strong>: <a href="mailto:<?php echo $info_email;?>"><?php echo $info_email ? $info_email : "info@mydomain.com";?></a></li>
+          <li><strong><?php echo __('网址 ','ecobiz');?></strong>: <a href="<?php echo $info_website;?>"><?php echo $info_website ? $info_website : "http://www.mydomain.com";?></a></li>
         </ul>
         <?php } ?>
       </div>
@@ -107,7 +107,7 @@
         <!-- Site Copyright -->
         <div class="copyright">
           <p><?php $footer_text = get_option('ecobiz_footer_text');?>
-        <?php echo ($footer_text) ? $footer_text : "&copy; 2007 - 2011 - Designed by <a href='#'>imediapixel.com</a>";?></p>
+        <?php echo ($footer_text) ? $footer_text : "&copy; 2007 - 2012 - Designed by <a href='#'>imediapixel.com</a>";?></p>
         </div>
         <!-- Site Copyright End -->     
       </div>
