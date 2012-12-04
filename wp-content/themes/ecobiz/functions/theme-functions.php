@@ -25,8 +25,7 @@ function excerpt_cn($excerpt_length) {
 	global $post;
 	$content = $post->post_content;
 	if(strlen($content) > $excerpt_length)
-		$content = substr($content, 0, $excerpt_length) . '...';
-	
+		$content = mb_substr($content, 0, $excerpt_length,'utf-8') . '...';
 	return $content;
 
 }
@@ -547,7 +546,7 @@ function imediapixel_pagelist($page_name, $num, $orderby="menu_order",$style="2c
         $out .= '<img src="'.get_template_directory_uri().'/timthumb.php?src='.thumb_url().'&amp;h=84&amp;w=84&amp;zc=1" alt="" class="boximg-pad" />'."\n";
       }
       $out .= '</div>';
-      $out .= '<p>'.excerpt_cn(84).'</p>';
+	  $out .= '<p>'.excerpt_cn(70).'</p>';
       $out .= '<a href="'.get_permalink().'" class="button"><span>'.__('VIEW MORE DETAIL ','ecobiz').'<img src="'.get_template_directory_uri().'/images/arrow_grey.png" alt="" class="readmore"/></span></a>';
       $out .= '</div>';         
       if ($counter %2 ==0) {
