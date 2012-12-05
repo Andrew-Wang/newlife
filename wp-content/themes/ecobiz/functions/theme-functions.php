@@ -474,10 +474,21 @@ function imediapixel_postslist($category, $num, $orderby="date",$style="2col") {
   $out = "";
   query_posts('cat='.$category_id.'&showposts='.$cat_num.'&orderby='.$orderby);
   
+  if($style == "1col"){
+	$out .= '<ul id="listlatestnews">';
+  }
   while (have_posts()) : the_post();
     $counter++;
-    
-    if ($style == "2col") {
+    if ($style == "1col") {
+        $out .= '<li><div class="boximg-blog">';
+        if (function_exists('has_post_thumbnail') && has_post_thumbnail()) {
+            $out .= '<div class="blogimage">';
+            $out .= '<img src="'.get_template_directory_uri().'/timthumb.php?src='.thumb_url().'&amp;h=84&amp;w=84&amp;zc=1" alt="" class="boximg-pad" /></div>';
+            }
+        $out .= '</div><div class="postbox">';
+        $out .= '<h3><a href="'.get_permalink().'">'.get_the_title().'</a></h3>';
+        $out .= '<p>'.get_the_content().'</p></div><div class="clear"></div></li>';
+	} else if ($style == "2col") {
       if ($counter %2 ==0) {
         $out .= '<div class="mainbox box-last">'; 
       } else {
@@ -516,6 +527,9 @@ function imediapixel_postslist($category, $num, $orderby="date",$style="2col") {
     }
     endwhile;
     wp_reset_query();
+	if($style == "1col"){
+	$out .= '</ul>';
+  }
   return $out;
 }
 
