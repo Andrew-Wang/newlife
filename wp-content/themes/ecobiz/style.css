@@ -1327,7 +1327,7 @@ ul#listlatestnews li {
   margin-left: 20px;
 }
 .contactinfo {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .contactinfo li {
   clear: both;
@@ -1335,7 +1335,7 @@ ul#listlatestnews li {
   padding-bottom: 10px;
   border-bottom: 1px solid #eaeaea;
   color: #666666;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 18px;
 }
 #map {
