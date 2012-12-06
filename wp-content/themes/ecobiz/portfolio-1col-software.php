@@ -56,13 +56,7 @@ Template Name: Portfolio 1 Column for Software
                 </div>
                 <div class="portfolio-content1">
                   <h3><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
-                <p><?php echo excerpt(40);?></p>
-                  <?php
-                  $portfolio_readmore = get_option('ecobiz_portfolio_readmore');
-                  $portfolio_visitsite = get_option('ecobiz_portfolio_visitsite');
-                  ?>
-                  <a href="<?php the_permalink();?>" class="button"><span><?php echo $portfolio_readmore ? $portfolio_readmore : __('VIEW DETAIL ','ecobiz');?><img src="<?php echo get_template_directory_uri();?>/images/arrow_grey.png" alt="" class="readmore"/></span></a>
-                  <a href="<?php echo $pf_url;?>" class="button"><span><?php echo $portfolio_visitsite ? $portfolio_visitsite : __('VISIT SITE ','ecobiz');?><img src="<?php echo get_template_directory_uri();?>/images/arrow_grey.png" alt="" class="readmore"/></span></a>
+                <p><?php the_content();?></p>
                 </div>
               </li>            
             </li>            
