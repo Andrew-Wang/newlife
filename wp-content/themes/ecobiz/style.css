@@ -90,7 +90,7 @@ License URI:
 
 /* ----------------------- GENERAL LAYOUT -----------------------*/
 body {
-  background-color: #669100;
+  background-color: #4681a2;
   background-image: url(images/pattern/grid2.png);
   background-repeat: repeat;
   font-family: arial, verdana, tahoma, helvetica;
@@ -564,8 +564,8 @@ img.readmore {
   margin-left: auto;
   margin-right: auto;
   border-bottom: 2px solid #61AB00;
-  background-color: #70C700;
-  background-image: url(images/green.jpg);
+  background-color: #01BAFD;
+  background-image: url(images/blue.jpg);
   background-position:  bottom center;
   background-repeat:  repeat-x;   
 }
@@ -1782,4 +1782,14 @@ html ul.tabs li.current, html ul.tabs li.current a:hover  {
 	float: left;
 	margin: 0 18px 18px 0;
 	padding: 0px 5px 0px 5px;
+}
+ul.process {
+    padding:8px;
+}
+ul.process li {
+    padding:6px;
+}
+ul.process span {
+    font-size:12px;
+    padding-left: 18px;
 }
