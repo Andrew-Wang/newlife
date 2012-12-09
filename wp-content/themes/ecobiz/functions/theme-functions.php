@@ -501,7 +501,7 @@ function imediapixel_postslist($category, $num, $orderby="date",$style="2col") {
       }
       $out .= '</div>';
       $out .= '<p>'.excerpt(25).'</p>';
-      $out .= '<a href="'.get_permalink().'" class="button"><span>'.__('VIEW MORE DETAIL ','ecobiz').'<img src="'.get_template_directory_uri().'/images/arrow_grey.png" alt="" class="readmore"/></span></a>';
+      $out .= '<a href="'.get_permalink().'" class="button"><span>'.__('查看更多 ','ecobiz').'<img src="'.get_template_directory_uri().'/images/arrow_grey.png" alt="" class="readmore"/></span></a>';
       $out .= '</div>';         
       if ($counter %2 ==0) {
         $out .= '<div class="spacer"></div>'; 
@@ -519,7 +519,7 @@ function imediapixel_postslist($category, $num, $orderby="date",$style="2col") {
       }
       $out .= '</div>';
       $out .= '<p>'.excerpt(8).'</p>';
-      $out .= '<a href="'.get_permalink().'" class="button"><span>'.__('VIEW MORE DETAIL ','ecobiz').'<img src="'.get_template_directory_uri().'/images/arrow_grey.png" alt="" class="readmore"/></span></a>';
+      $out .= '<a href="'.get_permalink().'" class="button"><span>'.__('查看更多 ','ecobiz').'<img src="'.get_template_directory_uri().'/images/arrow_grey.png" alt="" class="readmore"/></span></a>';
       $out .= '</div>';         
       if ($counter %3 ==0) {
         $out .= '<div class="spacer"></div>'; 
@@ -561,7 +561,7 @@ function imediapixel_pagelist($page_name, $num, $orderby="menu_order",$style="2c
       }
       $out .= '</div>';
 	  $out .= '<p>'.excerpt_cn(70).'</p>';
-      $out .= '<a href="'.get_permalink().'" class="button"><span>'.__('VIEW MORE DETAIL ','ecobiz').'<img src="'.get_template_directory_uri().'/images/arrow_grey.png" alt="" class="readmore"/></span></a>';
+      $out .= '<a href="'.get_permalink().'" class="button"><span>'.__('查看更多 ','ecobiz').'<img src="'.get_template_directory_uri().'/images/arrow_grey.png" alt="" class="readmore"/></span></a>';
       $out .= '</div>';         
       if ($counter %2 ==0) {
         $out .= '<div class="spacer"></div>'; 
@@ -579,7 +579,7 @@ function imediapixel_pagelist($page_name, $num, $orderby="menu_order",$style="2c
       }
       $out .= '</div>';
       $out .= '<p>'.excerpt(8).'</p>';
-      $out .= '<a href="'.get_permalink().'" class="button"><span>'.__('VIEW MORE DETAIL ','ecobiz').'<img src="'.get_template_directory_uri().'/images/arrow_grey.png" alt="" class="readmore"/></span></a>';
+      $out .= '<a href="'.get_permalink().'" class="button"><span>'.__('查看更多 ','ecobiz').'<img src="'.get_template_directory_uri().'/images/arrow_grey.png" alt="" class="readmore"/></span></a>';
       $out .= '</div>';         
       if ($counter %3 ==0) {
         $out .= '<div class="spacer"></div>'; 
@@ -615,7 +615,7 @@ function imediapixel_serviceslist($page_name, $num, $orderby="menu_order", $titl
     }
     $out .= '</div>';
     $out .= '<p>'.excerpt(8).'</p>';
-    $out .= '<a href="'.get_permalink().'" class="button"><span>'.__('VIEW MORE DETAIL ','ecobiz').'<img src="'.get_template_directory_uri().'/images/arrow_grey.png" alt="" class="readmore"/></span></a>';
+    $out .= '<a href="'.get_permalink().'" class="button"><span>'.__('查看更多 ','ecobiz').'<img src="'.get_template_directory_uri().'/images/arrow_grey.png" alt="" class="readmore"/></span></a>';
     $out .= '</div>';         
     if ($counter %3 ==0) {
       $out .= '<div class="spacer"></div>'; 
