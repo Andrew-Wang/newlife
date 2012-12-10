@@ -245,7 +245,7 @@ function imediapixel_latestnews($blogcat,$num=4,$title="") {
     $blog_page = get_option('ecobiz_blog_page');
     $blog_pid = get_page_by_title($blog_page);
     ?>
-    <a href="<?php echo get_permalink($blog_pid->ID);?>" class="button-more"><?php echo __('View All News','ecobiz');?></a>
+    <a href="<?php echo get_permalink($blog_pid->ID);?>" class="button-more"><?php echo __('查看更多','ecobiz');?></a>
   <?php
 }
 

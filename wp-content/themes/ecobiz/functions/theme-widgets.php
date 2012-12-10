@@ -223,7 +223,7 @@ class LatestNews_Widget extends WP_Widget {
     $numnews = apply_filters('numnews',$instance['numnews']);    
     
     if ($numnews == "") $numnews = 4;
-    if ($newstitle == "") $newstitle = "Latest News";
+    if ($newstitle == "") $newstitle = "新闻动态";
     
     echo $before_widget;
     $title = $before_title.$newstitle.$after_title;
