@@ -19,7 +19,7 @@
             ?>
             <a href="<?php echo $slideshow_url;?>" title="<?php the_title();?>">
               <?php if (function_exists('has_post_thumbnail') && has_post_thumbnail()) {?>
-              <img src="<?php echo get_template_directory_uri();?>/timthumb.php?src=<?php echo thumb_url();?>&amp;h=344&amp;w=960&amp;zc=1" alt="" <?php if ($enable_caption == "true") echo 'title="'.$slide_permalink.'"'?>/>                
+              <img src="<?php echo get_template_directory_uri();?>/timthumb.php?src=<?php echo thumb_url();?>&amp;h=344&amp;w=960&amp;zc=1" alt="" title="<?php if ($enable_caption == "true") echo $slide_permalink;else echo ''; ?>"/>                
             <?php } ?>            
             </a>
           <?php endwhile;?>
