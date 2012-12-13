@@ -2,7 +2,7 @@
             <div class="sidebartop"></div>
             <div class="sidebarmain">
               <div class="sidebarcontent">
-                <h4 class="sidebarheading"><?php echo __('Latest News','ecobiz');?></h4>
+                <h4 class="sidebarheading"><?php echo __('新闻动态','ecobiz');?></h4>
                 <?php
                 $blog_page = get_option('ecobiz_blog_page');
                 $blog_pid = get_page_by_title($blog_page);

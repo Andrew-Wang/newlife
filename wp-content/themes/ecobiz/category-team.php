@@ -37,7 +37,7 @@
             <?php } ?>
             </div>
             <p><?php echo excerpt(25);?></p>
-            <a href="<?php the_permalink();?>" class="button"><span><?php echo __('VIEW MORE DETAIL ','ecobiz');?><img src="<?php echo get_template_directory_uri();?>/images/arrow_grey.png" alt="" class="readmore"/></span></a>
+            <a href="<?php the_permalink();?>" class="button"><span><?php echo __('查看更多 ','ecobiz');?><img src="<?php echo get_template_directory_uri();?>/images/arrow_grey.png" alt="" class="readmore"/></span></a>
             </div>         
             <?php if ($counter %2 ==0) { ?>
               <div class="spacer"></div> 
