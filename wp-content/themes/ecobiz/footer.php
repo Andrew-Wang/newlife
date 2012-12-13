@@ -52,7 +52,7 @@
       <!-- Footer Box #4 -->
       <div class="footerbox box-last">
         <?php $footerlogo = get_option('ecobiz_footerlogo'); ?>
-        <a href="<?php echo home_url();?>"><img src="<?php echo ($footerlogo) ? $footerlogo : get_template_directory_uri().'/images/logo.png';?>" alt="Footer Logo" class="aligncenter"/></a>      
+        <a href="<?php echo home_url();?>"><img src="<?php echo ($footerlogo) ? $footerlogo : get_template_directory_uri().'/images/footer_logo.png';?>" alt="Footer Logo" class="aligncenter"/></a>
         <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('bottom4')) { ?>
           <p>青岛创源网站设计——青岛专业的网站设计、网站建设、网络推广</p>
         <?php } ?>

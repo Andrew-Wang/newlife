@@ -72,6 +72,6 @@ Template Name: Portfolio 2 Columns Webcase
             }
           ?>   
         </div>
-        <!-- Main Content Wrapper End -->
+        <!-- Main Content Wrapper End  -->
     
   <?php get_footer();?>
