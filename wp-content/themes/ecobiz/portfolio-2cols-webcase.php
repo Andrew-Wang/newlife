@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Portfolio 2 Columns
+Template Name: Portfolio 2 Columns Webcase
 */
 ?>
 <?php get_header();?>
@@ -35,7 +35,7 @@ Template Name: Portfolio 2 Columns
           $portfolio_items_num  = (get_option('ecobiz_portfolio_items_num')) ? get_option('ecobiz_portfolio_items_num') : 4; 
           $portfolio_order = (get_option('ecobiz_portfolio_order')) ? get_option('ecobiz_portfolio_order') : "date";
           
-          query_posts(array( 'post_type' => 'portfolio', 'showposts' => $portfolio_items_num,'paged'=>$page,"orderby" => $portfolio_order,'order'=> 'ASC'));
+          query_posts(array( 'post_type' => 'portfolio', 'portfolio_category' => 'webcase', 'showposts' => $portfolio_items_num,'paged'=>$page,"orderby" => $portfolio_order,'order'=> 'ASC'));
           
           $counter = 0;
           while ( have_posts() ) : the_post();
